@@ -90,15 +90,6 @@ def main():
                 sum_mv[0] += mv[0]  # 左右方向
                 sum_mv[1] += mv[1]  # 上下方向
 
-        # if key_lst[pg.K_UP]:
-        #     sum_mv[1] -= 5
-        # if key_lst[pg.K_DOWN]:
-        #     sum_mv[1] += 5
-        # if key_lst[pg.K_LEFT]:
-        #     sum_mv[0] -= 5
-        # if key_lst[pg.K_RIGHT]:
-        #     sum_mv[0] += 5
-
         kk_rct.move_ip(sum_mv)
         # こうかとんの移動
         if check_bound(kk_rct) != (True,True):  # 画面の外だったら
